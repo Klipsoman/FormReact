@@ -1,0 +1,29 @@
+
+.submitBtn {
+  outline: none;
+  background-color: #1890ff;
+  border: 1px solid #1890ff;
+  color: #ffffff;
+  width: 360px;
+  height: 40px;
+  margin-top: 48px;
+}
+.submitBtn:hover {
+  background-color: #40a9ff;
+  border: 1px solid #1890ff;
+}
+.submitBtn:active {
+  background-color: #096dd9;
+}
+.submitBtn:disabled {
+  background: #e8e8e8;
+  color: #bcbcbc;
+  border: 1px solid #bcbcbc;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .submitBtn {
+    width: 90vw;
+    max-width: 508px;
+  }
+}

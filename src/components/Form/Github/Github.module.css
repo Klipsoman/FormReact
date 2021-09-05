@@ -1,0 +1,8 @@
+.github{
+    margin-bottom: 24px;
+}
+.github input{
+    width: 256px;
+    height: 40px;
+    padding: 8px 12px;
+}

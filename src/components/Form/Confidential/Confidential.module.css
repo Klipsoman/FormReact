@@ -1,0 +1,11 @@
+.confidential {
+    color: var(--main-color);
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+  }
+  .confidentialLink {
+    color: #1890ff;
+    cursor: pointer;
+    text-decoration: underline;
+  }

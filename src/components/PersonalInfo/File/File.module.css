@@ -1,0 +1,45 @@
+.file{
+    padding-top: 23px;
+}
+.file input{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.fileLabel{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 254px;
+    height: 40px;
+    background: #F5F5F5;
+    border: 1px dashed #D9D9D9;
+    border-radius: 3px;
+    color: #595959;
+}
+.fileLabel::before{
+    content: '+';
+    font-size: 25px;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.fileName {
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 12%;
+    text-overflow: ellipsis;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+    .file{
+        width: 90vw;
+    }
+    .fileLabel{
+        width: 100%;
+    }
+}

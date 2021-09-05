@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Form from "./components/Form/Form";
+import Title from "./components/UI/Title/Title";
+import Modal from "./components/UI/Modals/ModalSubmit/ModalSubmit";
+import ModalConf from "./components/UI/Modals/ModalConf/ModalConf";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container main-container">
+        <Title>Анкета соискателя</Title>
+        <Form />
+        <Modal />
+        <ModalConf />
+      </div>
     </div>
   );
 }

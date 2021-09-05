@@ -1,0 +1,70 @@
+.modal {
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 1s ease;
+  position: fixed;
+}
+.modalActive{
+  pointer-events: auto;
+  z-index: 10;
+  opacity: 1;
+}
+.modalContent {
+  border-radius: 4px;
+  padding: 40px;
+  background-color: #fff;
+  width: 547px;
+  height: 244px;
+  position: relative;
+  overflow: hidden;
+}
+.modalHeader {
+  margin-bottom: 8px;
+}
+.modalTitle {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 38px;
+  text-align: center;
+}
+.modalBody {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+.modalFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalBtn {
+  background-color: #1890ff;
+  margin: auto;
+  height: 40px;
+  width: 360px;
+}
+.closeBtn {
+  font-size: 40px;
+  color: #2F80ED;
+  position: absolute;
+  right: 44.5px;
+  top: 17.5px;
+  cursor: pointer;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .modalContent {
+    padding: 16px;
+    width: 80vw;
+    height: auto;
+  }
+  .closeBtn {
+    right: 5%;
+    top: 0;
+  }
+}
