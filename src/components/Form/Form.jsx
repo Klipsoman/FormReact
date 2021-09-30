@@ -73,7 +73,7 @@ const Form = () => {
 
       <input
         className={"btn btn-primary " + style.submitBtn}
-        type="submit"
+        type="Отправить"
         disabled={
           form.isReadyToSubmit.name &&
           form.isReadyToSubmit.surName &&
